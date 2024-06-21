@@ -101,9 +101,7 @@
       }
     }, true)
   
-    /**
-     * Scroll with ofset on page load with hash links in the url
-     */
+
     window.addEventListener('load', () => {
       if (window.location.hash) {
         if (select(window.location.hash)) {
@@ -112,19 +110,9 @@
       }
     });
   
-    /**
-     * Preloader
-     */
-    let preloader = select('#preloader');
-    if (preloader) {
-      window.addEventListener('load', () => {
-        preloader.remove()
-      });
-    }
+
   
-    /**
-     * Porfolio isotope and filter
-     */
+ 
     window.addEventListener('load', () => {
       let portfolioContainer = select('.portfolio-container');
       if (portfolioContainer) {
@@ -152,25 +140,18 @@
   
     });
   
-    /**
-     * Initiate portfolio lightbox 
-     */
+  
     const portfolioLightbox = GLightbox({
       selector: '.portfolio-lightbox'
     });
   
-    /**
-     * Initiate portfolio details lightbox 
-     */
+  
     const portfolioDetailsLightbox = GLightbox({
       selector: '.portfolio-details-lightbox',
       width: '90%',
       height: '90vh'
     });
   
-    /**
-     * Portfolio details slider
-     */
     new Swiper('.portfolio-details-slider', {
       speed: 400,
       loop: true,
@@ -185,9 +166,7 @@
       }
     });
   
-    /**
-     * Skills animation
-     */
+   
     let skilsContent = select('.skills-content');
     if (skilsContent) {
       new Waypoint({
@@ -202,9 +181,6 @@
       })
     }
   
-    /**
-     * Testimonials slider
-     */
     new Swiper('.testimonials-slider', {
       speed: 600,
       loop: true,
@@ -219,10 +195,7 @@
         clickable: true
       }
     });
-  
-    /**
-     * Animation on scroll
-     */
+
     window.addEventListener('load', () => {
       AOS.init({
         duration: 1000,
@@ -231,10 +204,7 @@
         mirror: false
       });
     });
-  
-    /**
-     * Initiate Pure Counter 
-     */
+
     new PureCounter();
   
   })()
