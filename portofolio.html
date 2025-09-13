@@ -5,180 +5,405 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Portfolio - Tobias Bootstrap Template</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+  <title>Portfolio - Tobias Verbeek</title>
+  <meta content="Portfolio of Tobias Verbeek - Software Developer Projects" name="description">
+  <meta content="Tobias, Verbeek, Portfolio, Projects, Software Development" name="keywords">
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- AOS Animation -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
-  
 </head>
 
 <body>
+  <!-- Loading Screen -->
+  <div id="loading-screen">
+    <div class="loading-content">
+      <div class="loading-logo">
+        <span class="logo-text">T</span>
+      </div>
+      <div class="loading-bar">
+        <div class="loading-progress"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Cursor -->
+  <div class="cursor"></div>
+  <div class="cursor-follower"></div>
 
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top">
-    <div class="container-fluid d-flex justify-content-between align-items-center">
+    <div class="container">
+      <nav class="navbar">
+        <div class="nav-brand">
+          <a href="index.html" class="logo">
+            <span class="logo-text">Tobias</span>
+            <span class="logo-dot">.</span>
+          </a>
+        </div>
+        
+        <div class="nav-menu" id="nav-menu">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="about.html" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="portofolio.html" class="nav-link active">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a href="contact.html" class="nav-link">Contact</a>
+            </li>
+          </ul>
+        </div>
 
-      <h1 class="logo me-auto me-lg-0"><a href="index.html">Tobias</a></h1>
-      <!-- Uncomment below if you prefer to use an image logo -->
-      <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
-
-      <nav id="navbar" class="navbar order-last order-lg-0">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a class="active" href="portofolio.html">Projects</a></li>
-          <li><a href="contact.html">Contacts</a></li>
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
-
-      <div class="header-social-links">
-        <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
-      </div>
-
+        <div class="nav-toggle" id="nav-toggle">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
     </div>
-
-  </header><!-- End Header -->
+  </header>
 
   <main id="main">
+    <!-- ======= Hero Section ======= -->
+    <section class="page-hero">
+      <div class="container">
+        <div class="hero-content" data-aos="fade-up">
+          <h1 class="hero-title">My Portfolio</h1>
+          <p class="hero-subtitle">Explore my latest projects and creative work</p>
+        </div>
+      </div>
+    </section>
 
     <!-- ======= Portfolio Section ======= -->
-    <section id="portfolio" class="portfolio">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2 class="fs-bold">Projects</h2>
-          <p>hier heb je mijn projecten op een rijtje staan die ik gemaakt heb dit jaar</p>
+    <section id="portfolio" class="portfolio-section">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <h2>Featured Projects</h2>
+          <p>Here are some of the projects I've worked on during my studies at ROC Mondriaan</p>
         </div>
 
-        <div class="row" data-aos="fade-up" data-aos-delay="100">
-          <div class="col-lg-12 d-flex justify-content-center">
-            <ul id="portfolio-flters">
-              <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".filter-app">App</li>
-              <li data-filter=".filter-card">Card</li>
-              <li data-filter=".filter-web">Web</li>
-            </ul>
-          </div>
+        <!-- Filter Buttons -->
+        <div class="portfolio-filters" data-aos="fade-up" data-aos-delay="100">
+          <button class="filter-btn active" data-filter="*">All Projects</button>
+          <button class="filter-btn" data-filter=".web">Web Development</button>
+          <button class="filter-btn" data-filter=".app">Applications</button>
+          <button class="filter-btn" data-filter=".game">Games</button>
+          <button class="filter-btn" data-filter=".dashboard">Dashboards</button>
         </div>
 
-        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="/img/downloaden.png" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>project 1</h4>
-                <p>hoger lager</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
+        <!-- Portfolio Grid -->
+        <div class="portfolio-grid" data-aos="fade-up" data-aos-delay="200">
+          <!-- Project 1 - Higher Lower Game -->
+          <div class="portfolio-item web app" data-category="web">
+            <div class="portfolio-card">
+              <div class="portfolio-image">
+                <img src="img/downloaden.png" alt="Higher Lower Game" loading="lazy">
+                <div class="portfolio-overlay">
+                  <div class="portfolio-content">
+                    <h3>Higher Lower Game</h3>
+                    <p>A fun number guessing game built with JavaScript</p>
+                    <div class="portfolio-tech">
+                      <span class="tech-tag">HTML5</span>
+                      <span class="tech-tag">CSS3</span>
+                      <span class="tech-tag">JavaScript</span>
+                    </div>
+                    <div class="portfolio-actions">
+                      <button class="btn-action" data-project="higher-lower">
+                        <i class="fas fa-eye"></i>
+                        View Details
+                      </button>
+                      <a href="#" class="btn-action" target="_blank">
+                        <i class="fas fa-external-link-alt"></i>
+                        Live Demo
+                      </a>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="/img/OIP.png" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>project 2</h4>
-                <p>The Escape Room</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
+          <!-- Project 2 - Escape Room -->
+          <div class="portfolio-item web game" data-category="web">
+            <div class="portfolio-card">
+              <div class="portfolio-image">
+                <img src="img/OIP.png" alt="Escape Room Game" loading="lazy">
+                <div class="portfolio-overlay">
+                  <div class="portfolio-content">
+                    <h3>The Escape Room</h3>
+                    <p>An interactive puzzle game with multiple challenges</p>
+                    <div class="portfolio-tech">
+                      <span class="tech-tag">HTML5</span>
+                      <span class="tech-tag">CSS3</span>
+                      <span class="tech-tag">JavaScript</span>
+                    </div>
+                    <div class="portfolio-actions">
+                      <button class="btn-action" data-project="escape-room">
+                        <i class="fas fa-eye"></i>
+                        View Details
+                      </button>
+                      <a href="#" class="btn-action" target="_blank">
+                        <i class="fas fa-external-link-alt"></i>
+                        Live Demo
+                      </a>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="/img/OIP (1).png" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>project 3</h4>
-                <p>Battle ships</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 2"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
+          <!-- Project 3 - Battleships -->
+          <div class="portfolio-item app game" data-category="app">
+            <div class="portfolio-card">
+              <div class="portfolio-image">
+                <img src="img/OIP (1).png" alt="Battleships Game" loading="lazy">
+                <div class="portfolio-overlay">
+                  <div class="portfolio-content">
+                    <h3>Battleships</h3>
+                    <p>Classic battleship game with AI opponent</p>
+                    <div class="portfolio-tech">
+                      <span class="tech-tag">JavaScript</span>
+                      <span class="tech-tag">Canvas API</span>
+                      <span class="tech-tag">Game Logic</span>
+                    </div>
+                    <div class="portfolio-actions">
+                      <button class="btn-action" data-project="battleships">
+                        <i class="fas fa-eye"></i>
+                        View Details
+                      </button>
+                      <a href="#" class="btn-action" target="_blank">
+                        <i class="fas fa-external-link-alt"></i>
+                        Live Demo
+                      </a>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-<style>
-  img{
-    width:400px;
-    height: 400px;
-  }
-</style>
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="/img/Schermafbeelding 2024-06-21 102331.png" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>project 4</h4>
-                <p>Dashboards</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 2"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
+
+          <!-- Project 4 - Dashboard -->
+          <div class="portfolio-item dashboard" data-category="dashboard">
+            <div class="portfolio-card">
+              <div class="portfolio-image">
+                <img src="img/Schermafbeelding 2024-06-21 102331.png" alt="Data Dashboard" loading="lazy">
+                <div class="portfolio-overlay">
+                  <div class="portfolio-content">
+                    <h3>Data Dashboard</h3>
+                    <p>Interactive dashboard with charts and analytics</p>
+                    <div class="portfolio-tech">
+                      <span class="tech-tag">HTML5</span>
+                      <span class="tech-tag">CSS3</span>
+                      <span class="tech-tag">Chart.js</span>
+                    </div>
+                    <div class="portfolio-actions">
+                      <button class="btn-action" data-project="dashboard">
+                        <i class="fas fa-eye"></i>
+                        View Details
+                      </button>
+                      <a href="#" class="btn-action" target="_blank">
+                        <i class="fas fa-external-link-alt"></i>
+                        Live Demo
+                      </a>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
 
+          <!-- Project 5 - Coming Soon -->
+          <div class="portfolio-item web" data-category="web">
+            <div class="portfolio-card coming-soon">
+              <div class="portfolio-image">
+                <div class="coming-soon-content">
+                  <i class="fas fa-code"></i>
+                  <h3>Coming Soon</h3>
+                  <p>New project in development</p>
+                </div>
+                <div class="portfolio-overlay">
+                  <div class="portfolio-content">
+                    <h3>New Project</h3>
+                    <p>Currently working on something exciting</p>
+                    <div class="portfolio-tech">
+                      <span class="tech-tag">In Development</span>
+                    </div>
+                    <div class="portfolio-actions">
+                      <button class="btn-action" disabled>
+                        <i class="fas fa-clock"></i>
+                        Coming Soon
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
 
-
+          <!-- Project 6 - Coming Soon -->
+          <div class="portfolio-item app" data-category="app">
+            <div class="portfolio-card coming-soon">
+              <div class="portfolio-image">
+                <div class="coming-soon-content">
+                  <i class="fas fa-mobile-alt"></i>
+                  <h3>Mobile App</h3>
+                  <p>Mobile application in progress</p>
+                </div>
+                <div class="portfolio-overlay">
+                  <div class="portfolio-content">
+                    <h3>Mobile Application</h3>
+                    <p>Building a cross-platform mobile app</p>
+                    <div class="portfolio-tech">
+                      <span class="tech-tag">React Native</span>
+                      <span class="tech-tag">In Development</span>
+                    </div>
+                    <div class="portfolio-actions">
+                      <button class="btn-action" disabled>
+                        <i class="fas fa-clock"></i>
+                        Coming Soon
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-
       </div>
-    </section><!-- End Portfolio Section -->
+    </section>
 
-  </main><!-- End #main -->
+    <!-- ======= Project Details Modal ======= -->
+    <div id="project-modal" class="project-modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 id="modal-title">Project Title</h2>
+          <button class="modal-close">
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="modal-image">
+            <img id="modal-image" src="" alt="">
+          </div>
+          <div class="modal-info">
+            <div class="project-description">
+              <h3>About This Project</h3>
+              <p id="modal-description">Project description will go here</p>
+            </div>
+            <div class="project-technologies">
+              <h3>Technologies Used</h3>
+              <div id="modal-tech" class="tech-tags">
+                <!-- Tech tags will be inserted here -->
+              </div>
+            </div>
+            <div class="project-features">
+              <h3>Key Features</h3>
+              <ul id="modal-features">
+                <!-- Features will be inserted here -->
+              </ul>
+            </div>
+            <div class="project-links">
+              <a href="#" id="modal-demo" class="btn btn-primary" target="_blank">
+                <i class="fas fa-external-link-alt"></i>
+                View Live Demo
+              </a>
+              <a href="#" id="modal-github" class="btn btn-secondary" target="_blank">
+                <i class="fab fa-github"></i>
+                View Code
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ======= CTA Section ======= -->
+    <section class="cta-section">
+      <div class="container">
+        <div class="cta-content" data-aos="fade-up">
+          <h2>Interested in My Work?</h2>
+          <p>Let's discuss how we can work together on your next project.</p>
+          <div class="cta-buttons">
+            <a href="contact.html" class="btn btn-primary">
+              <span>Get In Touch</span>
+              <i class="fas fa-paper-plane"></i>
+            </a>
+            <a href="about.html" class="btn btn-secondary">
+              <span>Learn More About Me</span>
+              <i class="fas fa-user"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
 
   <!-- ======= Footer ======= -->
   <footer id="footer">
     <div class="container">
-      <div class="copyright">
-        &copy; Copyright <strong><span>Tobias</span></strong>. All Rights Reserved
+      <div class="footer-content">
+        <div class="footer-brand">
+          <h3>Tobias Verbeek</h3>
+          <p>Software Developer & Student</p>
+        </div>
+        <div class="footer-links">
+          <div class="footer-section">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="portofolio.html">Portfolio</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Connect</h4>
+            <div class="social-links">
+              <a href="https://github.com/Tobiasverbeekje" target="_blank">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="https://linkedin.com/in/tobiasverbeek" target="_blank">
+                <i class="fab fa-linkedin"></i>
+              </a>
+              <a href="mailto:tobiasverbeek@gmail.com">
+                <i class="fas fa-envelope"></i>
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="credits">
-      
-        Designed by <a href="https://github.com/Tobiasverbeekje">Tobias</a>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Tobias Verbeek. All rights reserved.</p>
       </div>
     </div>
-  </footer><!-- End  Footer -->
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  </footer>
 
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <!-- Back to Top Button -->
+  <button id="back-to-top" class="back-to-top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
 
-  <!-- Template Main JS File -->
+  <!-- Scripts -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="assets/js/main.js"></script>
 
 </body>

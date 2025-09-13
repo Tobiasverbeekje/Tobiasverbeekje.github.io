@@ -5,24 +5,22 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>About - Tobias Bootstrap Template</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+  <title>Contact - Tobias Verbeek</title>
+  <meta content="Contact Tobias Verbeek - Software Developer" name="description">
+  <meta content="Tobias, Verbeek, Contact, Software Developer, Get in Touch" name="keywords">
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- AOS Animation -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
@@ -30,60 +28,350 @@
 </head>
 
 <body>
+  <!-- Loading Screen -->
+  <div id="loading-screen">
+    <div class="loading-content">
+      <div class="loading-logo">
+        <span class="logo-text">T</span>
+      </div>
+      <div class="loading-bar">
+        <div class="loading-progress"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Cursor -->
+  <div class="cursor"></div>
+  <div class="cursor-follower"></div>
 
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top">
-    <div class="container-fluid d-flex justify-content-between align-items-center">
+    <div class="container">
+      <nav class="navbar">
+        <div class="nav-brand">
+          <a href="index.html" class="logo">
+            <span class="logo-text">Tobias</span>
+            <span class="logo-dot">.</span>
+          </a>
+        </div>
+        
+        <div class="nav-menu" id="nav-menu">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="about.html" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="portofolio.html" class="nav-link">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a href="contact.html" class="nav-link active">Contact</a>
+            </li>
+          </ul>
+        </div>
 
-      <h1 class="logo me-auto me-lg-0"><a href="index.html">Tobias</a></h1>
-      <!-- Uncomment below if you prefer to use an image logo -->
-      <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+        <div class="nav-toggle" id="nav-toggle">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+    </div>
+  </header>
 
-      <nav id="navbar" class="navbar order-last order-lg-0">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a class="active" href="about.html">About</a></li>
-          <li><a href="portofolio.html">Portfolio</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
-
-      <div class="header-social-links">
-        <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
+  <main id="main">
+    <!-- ======= Hero Section ======= -->
+    <section class="page-hero">
+      <div class="container">
+        <div class="hero-content" data-aos="fade-up">
+          <h1 class="hero-title">Get In Touch</h1>
+          <p class="hero-subtitle">Let's discuss your next project or just say hello</p>
+        </div>
       </div>
-    </section><!-- End Facts Section -->
-  </main><!-- End #main -->
+    </section>
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact-section">
+      <div class="container">
+        <div class="contact-content">
+          <div class="contact-grid">
+            <!-- Contact Info -->
+            <div class="contact-info" data-aos="fade-right">
+              <div class="section-header">
+                <h2>Let's Connect</h2>
+                <p>I'm always excited to hear about new opportunities and interesting projects. Feel free to reach out!</p>
+              </div>
+
+              <div class="contact-methods">
+                <div class="contact-method" data-aos="fade-up" data-aos-delay="100">
+                  <div class="method-icon">
+                    <i class="fas fa-envelope"></i>
+                  </div>
+                  <div class="method-content">
+                    <h3>Email</h3>
+                    <p>tobiasverbeek@gmail.com</p>
+                    <a href="mailto:tobiasverbeek@gmail.com" class="method-link">Send Email</a>
+                  </div>
+                </div>
+
+                <div class="contact-method" data-aos="fade-up" data-aos-delay="200">
+                  <div class="method-icon">
+                    <i class="fas fa-phone"></i>
+                  </div>
+                  <div class="method-content">
+                    <h3>Phone</h3>
+                    <p>+31 6 20072533</p>
+                    <a href="tel:+31620072533" class="method-link">Call Now</a>
+                  </div>
+                </div>
+
+                <div class="contact-method" data-aos="fade-up" data-aos-delay="300">
+                  <div class="method-icon">
+                    <i class="fas fa-map-marker-alt"></i>
+                  </div>
+                  <div class="method-content">
+                    <h3>Location</h3>
+                    <p>The Hague, Netherlands</p>
+                    <a href="https://maps.google.com/?q=The+Hague+Netherlands" target="_blank" class="method-link">View on Map</a>
+                  </div>
+                </div>
+
+                <div class="contact-method" data-aos="fade-up" data-aos-delay="400">
+                  <div class="method-icon">
+                    <i class="fas fa-graduation-cap"></i>
+                  </div>
+                  <div class="method-content">
+                    <h3>Education</h3>
+                    <p>ROC Mondriaan Brasserskade</p>
+                    <a href="https://www.rocmondriaan.nl" target="_blank" class="method-link">Visit School</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="social-links" data-aos="fade-up" data-aos-delay="500">
+                <h3>Follow Me</h3>
+                <div class="social-icons">
+                  <a href="https://github.com/Tobiasverbeekje" target="_blank" class="social-link">
+                    <i class="fab fa-github"></i>
+                    <span>GitHub</span>
+                  </a>
+                  <a href="https://linkedin.com/in/tobiasverbeek" target="_blank" class="social-link">
+                    <i class="fab fa-linkedin"></i>
+                    <span>LinkedIn</span>
+                  </a>
+                  <a href="mailto:tobiasverbeek@gmail.com" class="social-link">
+                    <i class="fas fa-envelope"></i>
+                    <span>Email</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="contact-form-container" data-aos="fade-left">
+              <div class="contact-form-wrapper">
+                <h3>Send a Message</h3>
+                <p>Fill out the form below and I'll get back to you as soon as possible.</p>
+
+                <form id="contact-form" class="contact-form">
+                  <div class="form-group">
+                    <label for="name">Full Name *</label>
+                    <input type="text" id="name" name="name" required>
+                    <span class="form-error" id="name-error"></span>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="email">Email Address *</label>
+                    <input type="email" id="email" name="email" required>
+                    <span class="form-error" id="email-error"></span>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="subject">Subject *</label>
+                    <input type="text" id="subject" name="subject" required>
+                    <span class="form-error" id="subject-error"></span>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="message">Message *</label>
+                    <textarea id="message" name="message" rows="6" required></textarea>
+                    <span class="form-error" id="message-error"></span>
+                  </div>
+
+                  <div class="form-group">
+                    <label class="checkbox-label">
+                      <input type="checkbox" id="privacy" name="privacy" required>
+                      <span class="checkmark"></span>
+                      I agree to the <a href="#" target="_blank">Privacy Policy</a> and <a href="#" target="_blank">Terms of Service</a>
+                    </label>
+                    <span class="form-error" id="privacy-error"></span>
+                  </div>
+
+                  <button type="submit" class="btn btn-primary btn-submit">
+                    <span class="btn-text">Send Message</span>
+                    <span class="btn-loading" style="display: none;">
+                      <i class="fas fa-spinner fa-spin"></i>
+                      Sending...
+                    </span>
+                    <i class="fas fa-paper-plane"></i>
+                  </button>
+                </form>
+
+                <div class="form-status" id="form-status" style="display: none;">
+                  <div class="status-message">
+                    <i class="fas fa-check-circle"></i>
+                    <span>Message sent successfully! I'll get back to you soon.</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= FAQ Section ======= -->
+    <section class="faq-section">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <h2>Frequently Asked Questions</h2>
+          <p>Quick answers to common questions</p>
+        </div>
+
+        <div class="faq-grid">
+          <div class="faq-item" data-aos="fade-up" data-aos-delay="100">
+            <div class="faq-question">
+              <h3>What services do you offer?</h3>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <p>I specialize in web development, including frontend development with HTML, CSS, and JavaScript, as well as backend development with Python and PHP. I also create interactive games and data visualization dashboards.</p>
+            </div>
+          </div>
+
+          <div class="faq-item" data-aos="fade-up" data-aos-delay="200">
+            <div class="faq-question">
+              <h3>How long does a typical project take?</h3>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <p>Project timelines vary depending on complexity. A simple website might take 1-2 weeks, while a complex web application could take 1-3 months. I'll provide a detailed timeline during our initial consultation.</p>
+            </div>
+          </div>
+
+          <div class="faq-item" data-aos="fade-up" data-aos-delay="300">
+            <div class="faq-question">
+              <h3>Do you work with students or small businesses?</h3>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <p>Absolutely! As a student myself, I understand the needs of other students and small businesses. I offer competitive rates and flexible arrangements to fit different budgets and requirements.</p>
+            </div>
+          </div>
+
+          <div class="faq-item" data-aos="fade-up" data-aos-delay="400">
+            <div class="faq-question">
+              <h3>What technologies do you work with?</h3>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <p>I work with HTML5, CSS3, JavaScript, Python, PHP, and various frameworks and libraries. I'm also familiar with databases, version control (Git), and modern development tools.</p>
+            </div>
+          </div>
+
+          <div class="faq-item" data-aos="fade-up" data-aos-delay="500">
+            <div class="faq-question">
+              <h3>Do you provide ongoing support?</h3>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <p>Yes! I offer ongoing support and maintenance for all projects. This includes bug fixes, updates, and feature additions. We can discuss support packages that work best for your needs.</p>
+            </div>
+          </div>
+
+          <div class="faq-item" data-aos="fade-up" data-aos-delay="600">
+            <div class="faq-question">
+              <h3>How do we get started?</h3>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <p>Simply reach out through the contact form or email me directly. We'll schedule a consultation to discuss your project requirements, timeline, and budget. From there, I'll provide a detailed proposal.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= CTA Section ======= -->
+    <section class="cta-section">
+      <div class="container">
+        <div class="cta-content" data-aos="fade-up">
+          <h2>Ready to Start Your Project?</h2>
+          <p>Let's bring your ideas to life with modern, efficient, and beautiful solutions.</p>
+          <div class="cta-buttons">
+            <a href="#contact" class="btn btn-primary">
+              <span>Start a Project</span>
+              <i class="fas fa-rocket"></i>
+            </a>
+            <a href="portofolio.html" class="btn btn-secondary">
+              <span>View My Work</span>
+              <i class="fas fa-eye"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
 
   <!-- ======= Footer ======= -->
   <footer id="footer">
     <div class="container">
-      <div class="copyright">
-        &copy; Copyright <strong><span>Tobias</span></strong>. All Rights Reserved
+      <div class="footer-content">
+        <div class="footer-brand">
+          <h3>Tobias Verbeek</h3>
+          <p>Software Developer & Student</p>
+        </div>
+        <div class="footer-links">
+          <div class="footer-section">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="portofolio.html">Portfolio</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Connect</h4>
+            <div class="social-links">
+              <a href="https://github.com/Tobiasverbeekje" target="_blank">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="https://linkedin.com/in/tobiasverbeek" target="_blank">
+                <i class="fab fa-linkedin"></i>
+              </a>
+              <a href="mailto:tobiasverbeek@gmail.com">
+                <i class="fas fa-envelope"></i>
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="credits">
-
-        Designed by <a href="https://github.com/Tobiasverbeekje">Tobias</a>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Tobias Verbeek. All rights reserved.</p>
       </div>
     </div>
-  </footer><!-- End  Footer -->
+  </footer>
 
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <!-- Back to Top Button -->
+  <button id="back-to-top" class="back-to-top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
 
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-
-  <!-- Template Main JS File -->
+  <!-- Scripts -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="assets/js/main.js"></script>
 
 </body>
